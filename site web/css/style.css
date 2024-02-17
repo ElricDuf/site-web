@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Monserrat', sans-serif;
+}
+
+header{
+    background-color: #2694D3;
+    position : relative;
+    height: 80px;
+    top : 0;
+}
+
+header>* {
+    position : absolute;
+    top: 50%;
+    transform : translateY(-50%);
+    margin : 0 30px;
+}
+header img{
+    width : 50px;
+}
+
+header>ul{
+    right: 0;
+    text-decoration: none;
+}
+
+header, header a {
+    color : white;
+}
+header a:nth-child(2){
+    font-size : 20px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+header>ul li {
+    margin: 10px;
+    font-weight: 600;
+    display : inline-block;
+    list-style: none;
+    transition : background-color 0.5s ease-in-out;
+}
+header>ul li:hover {
+    background-color:rgba(0,0,0,0.1);
+}
+
+
+
+.page-principale{
+    display: block;
+    width:80%;
+    margin: auto;
+    margin-top: 100px;
+}
+.bienvenue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.bienvenue>img{
+    width: 500px;
+    align-self: center;
+    border-radius: 5px;
+}
+.texte1{
+    width:500px;
+    margin-left:20px;
+}
+.texte p{
+    text-align: justify;
+    font-size:20px;
+}
+.separator{
+    height : 3px;
+    background-color: #2694D3 ;
+    width: 100%;
+    margin:20px 0;
+}
+.cate1{
+    text-align:center;
+}
+.a-propos{
+    margin-bottom: 100px;
+}
+.photo-a-propos{
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/a-propos.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 45px;
+}
+.noir-opacite{
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+    border-radius: 5px;
+}
+.texte-photo{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+}
+.texte-photo p {
+    font-size: 20px;
+    text-align:justify;
+}
+.texte-photo h3{
+    font-size: 30px;
+}
+input:not(input[type="submit"]),textarea{
+    border:none;
+    border-bottom: 2px solid #2694D3 ;
+    resize: none;
+    outline:none;
+    font-family: "Montserrat";
+    width: 30vw;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.form_top{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+.form_gauche{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form_gauche>div*{
+    display: block;
+}
+.form_droite *{
+    display: block;
+}
+.form_contact input[type="submit"]{
+
+    background-color: #2694D3;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    font-family: "Monserrat";
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+    margin-bottom: 80px;
+    margin-top : 40px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+.form_contact input[type="submit"]:hover {
+    transform: translateY(-5px);
+}
+.champ-de-contact{
+    margin-top: 40px;
+}
+
+.commentaire{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.commentaire_pp{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.commentaire_text{
+    margin-left: 20px;
+}
+.commentaire_text p{
+    text-align: justify;
+}
+.commentaires{
+    margin-bottom: 40px;
+}
+footer{
+    background-color: #2694D3;
+    position : relative;
+    height: 80px;
+}
+footer h2{
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform : translateY(-50%);
+}
+
+.loader{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    z-index:99;
+    background-color: #2694D3;
+    top: 0;
+    transition: top 1s ease-in-out;
+    
+}
+
+.loader p{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top : 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
